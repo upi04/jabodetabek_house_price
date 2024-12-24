@@ -54,10 +54,10 @@ from src.model_training import train_random_forest_model
 # Train the Random Forest model
 train_random_forest_model(data)
 ```
-###5. Evaluate Model
+##5. Evaluate Model
 Model performance is evaluated using MSE and R² Score. Results and visualizations are stored in the results/ directory.
 
-###6. Visualizations
+##6. Visualizations
 Generated visualizations include:
 Residual plots
 Actual vs. predicted prices
