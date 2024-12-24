@@ -16,19 +16,14 @@ This project focuses on predicting house prices in the Jabodetabek region using 
 ## Project Structure
 project/ ├── data/ # Directory for storing dataset files │ ├── raw/ # Raw dataset files │ └── processed/ # Processed dataset files ├── notebooks/ # Jupyter Notebooks for EDA and analysis │ └── eda.ipynb # Notebook for Exploratory Data Analysis ├── src/ # Source code for preprocessing and model training │ ├── feature_engineering.py # Code for feature engineering and handling missing values │ ├── model_training.py # Code for training Random Forest and hyperparameter tuning │ ├── utils.py # Utility functions for data cleaning and preprocessing │ └── init.py # Marks the directory as a Python package ├── results/ # Visualizations and performance results │ ├── figures/ # Generated figures and plots │ └── metrics.json # File to store evaluation metrics ├── requirements.txt # Required Python packages └── README.md # This file
 
-yaml
-Copy code
-
----
-
 ## Steps to Run the Project
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 Clone the repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/house-price-prediction.git
 cd house-price-prediction
-2. Install Dependencies
+### 2. Install Dependencies
 Create a virtual environment and install dependencies:
 
 bash
