@@ -23,37 +23,42 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/house-price-prediction.git
 cd house-price-prediction
+```
 ### 2. Install Dependencies
-Create a virtual environment and install dependencies:
 
-bash
-Copy code
+Create a virtual environment and install dependencies:
+```bash
 pip install -r requirements.txt
-3. Data Preparation
+```
+The requirements.txt file contains all the libraries needed to run the code. Example contents of the requirements.txt:
+```bash
+pandas==1.5.0
+scikit-learn==1.0.2
+matplotlib==3.4.3
+seaborn==0.11.2
+xgboost==1.5.0
+```
+### 3. Data Preparation
 Place the dataset in the data/raw/ directory. The dataset should include columns like price_in_rp, land_size_m2, building_size_m2, bedrooms, bathrooms, etc.
 
 Example code to load the dataset:
-
-python
-Copy code
+```bash
 import pandas as pd
 data = pd.read_csv('data/raw/your_dataset.csv')
 print(data.head())
+```
 4. Model Training
 Run the model_training.py script to train the model using Random Forest and perform hyperparameter tuning:
-
-python
-Copy code
+```bash
 from src.model_training import train_random_forest_model
-
 # Train the Random Forest model
 train_random_forest_model(data)
-5. Evaluate Model
+```
+###5. Evaluate Model
 Model performance is evaluated using MSE and R² Score. Results and visualizations are stored in the results/ directory.
 
-6. Visualizations
+###6. Visualizations
 Generated visualizations include:
-
 Residual plots
 Actual vs. predicted prices
 Feature importance
